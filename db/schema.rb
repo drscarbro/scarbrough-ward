@@ -14,6 +14,11 @@
 ActiveRecord::Schema.define(version: 20161230203002) do
 
   create_table "rsvps", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.integer  "party_size"
+    t.string   "email"
+    t.string   "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
