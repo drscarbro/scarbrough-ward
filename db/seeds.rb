@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+rsvps = Rsvp.create([{firstname: 'Test', lastname: 'User', party_size: 4},
+{firstname: 'Another', lastname: 'User', party_size: 2}])
