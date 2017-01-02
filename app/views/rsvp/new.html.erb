@@ -1,0 +1,17 @@
+<%= form_for(@rsvp) do |f| %>
+    <div class="field">
+        <%= f.label :'First Name:' %>
+        <%= f.text_field :firstname %><br/>
+        <%= f.label :'Last Name:' %>
+        <%= f.text_field :lastname %><br/>
+        <%= f.label :'Number in Party:' %>
+        <%= f.text_field :party_size %><br/>
+        <%= f.label :'e-mail address:' %>
+        <%= f.text_field :email %><br/>
+        <%= f.label :'Mailing Address:' %>
+        <%= f.text_field :address %><br/>
+    </div>
+    <div>
+        <%= f.submit :'Create' %>
+    </div>
+<% end %>
