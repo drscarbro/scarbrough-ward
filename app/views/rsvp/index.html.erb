@@ -1,2 +1,37 @@
 <% provide(:title, "RSVP") %>
 <p><%= @rsvp_welcome %></p>
+<%= form_for(@rsvp) do |f| %>
+    <div class='form-box'>
+        <div class='form-group'>
+            <%= f.label :'First Name:' %>
+            <%= f.text_field :firstname, :class => 'form-control' %>
+        </div>
+        <div class='form-group'>
+            <%= f.label :'Last Name:' %>
+            <%= f.text_field :lastname, :class => 'form-control' %>
+        </div>
+        <div class='form-group'>
+            <%= f.label :'Number in Party:'%>
+            <%= f.text_field :party_size, :class => 'form-control' %>
+        </div>
+        <div class='form-group'>
+            <%= f.label :'e-mail address:' %>
+            <%= f.text_field :email, :class => 'form-control' %>
+        </div>
+        <div class='form-group'>
+            <%= f.label :'Mailing Address:' %>
+            <%= f.text_field :address, :class => 'form-control' %>
+        </div>
+    </div>
+    <div>
+        <%= f.submit :'Create', :class => 'btn btn-large' %>
+    </div>
+<% end %>
+<!-- p><% @all_rsvps.each do |r| %>
+<%= r.firstname %><br/>
+<%= r.lastname %><br/>
+<%= r.party_size %><br/>
+<%= r.email %><br/>
+<%= r.address %><br/>
+<% end %>
+</p -->

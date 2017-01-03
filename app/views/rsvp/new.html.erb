@@ -1,17 +1,27 @@
 <%= form_for(@rsvp) do |f| %>
-    <div class="field">
-        <%= f.label :'First Name:' %>
-        <%= f.text_field :firstname %><br/>
-        <%= f.label :'Last Name:' %>
-        <%= f.text_field :lastname %><br/>
-        <%= f.label :'Number in Party:' %>
-        <%= f.text_field :party_size %><br/>
-        <%= f.label :'e-mail address:' %>
-        <%= f.text_field :email %><br/>
-        <%= f.label :'Mailing Address:' %>
-        <%= f.text_field :address %><br/>
+    <div class='form-box'>
+        <div class='form-group'>
+            <%= f.label :'First Name:' %>
+            <%= f.text_field :firstname, :class => 'form-control' %>
+        </div>
+        <div class='form-group'>
+            <%= f.label :'Last Name:' %>
+            <%= f.text_field :lastname, :class => 'form-control' %>
+        </div>
+        <div class='form-group'>
+            <%= f.label :'Number in Party:'%>
+            <%= f.text_field :party_size, :class => 'form-control' %>
+        </div>
+        <div class='form-group'>
+            <%= f.label :'e-mail address:' %>
+            <%= f.text_field :email, :class => 'form-control' %>
+        </div>
+        <div class='form-group'>
+            <%= f.label :'Mailing Address:' %>
+            <%= f.text_field :address, :class => 'form-control' %>
+        </div>
     </div>
     <div>
-        <%= f.submit :'Create' %>
+        <%= f.submit :'Create', :class => 'button' %>
     </div>
 <% end %>
