@@ -11,9 +11,12 @@ group :production do
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
+gem 'minitest-reporters', group: [:development, :test]
+gem 'mini_backtrace', group: [:development, :test]
+gem 'guard-minitest', group: [:development, :test]
+# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'

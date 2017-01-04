@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class RsvpControllerTest < ActionController::TestCase
-  test "should get indeex" do
-    get :indeex
+  test "should get index" do
+    get :index
     assert_response :success
   end
 
