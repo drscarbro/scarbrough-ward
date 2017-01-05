@@ -20,16 +20,88 @@ html{
     overflow-y: scroll;
 }
 
-body{
-    // background-image: url('laughing.jpg');
-    // background-image: url('coffee-v.jpg');
-    color: white;
-    background-image: url('coffee-h.png');
-    background-size: 100%;
-    background-color: rgb(60,60,60);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-top: 60px;
+@media only screen and (max-device-width:480px){
+    body{
+        background-image: url('coffee-v.png');
+        color: white;
+        background-size: 100%;
+        background-color: rgb(72, 73, 91);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 60px;
+    }  
+}
+
+@media only screen and (min-device-width: 600px) and (orientation:landscape){
+    body{
+        color: white;
+        background-image: url('coffee-h.png');
+        background-size: 100%;
+        background-color: rgb(72, 73, 91);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait){
+    body{
+        background-image: url('coffee-v.png');
+        color: white;
+        background-size: 100%;
+        background-color: rgb(72, 73, 91);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation:portrait){
+    body{
+        background-image: url('coffee-v.png');
+        color: white;
+        background-size: 100%;
+        background-color: rgb(72, 73, 91);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation:landscape){
+    body{
+        color: white;
+        background-image: url('coffee-h.png');
+        background-size: 100%;
+        background-color: rgb(72, 73, 91);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation:portrait){
+    body{
+        background-image: url('coffee-v.png');
+        color: white;
+        background-size: 100%;
+        background-color: rgb(72, 73, 91);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation:landscape){
+    body{
+        color: white;
+        background-image: url('coffee-h.png');
+        background-size: 100%;
+        background-color: rgb(72, 73, 91);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 60px;
+    }
 }
 
 section{
@@ -49,24 +121,17 @@ textarea{
 }
 
 .jumbotron{
-    // background: rgb(60,60,60);
     color: white;
-    // opacity: 0.6;
     background: rgba(60, 60, 60, 0.6);
 }
 
 .container{
-    // width: 100%;
-    // background: rgb(60,60,60);
     color: white;
-    // opacity: 0.6;
-    // background: rgba(60, 60, 60, 0.6);
 }
 
 .form-box{
     padding: 10px;
     color: white;
-    // background: rgba(60, 60, 60, 0.6);
 }
 
 .btn{
