@@ -13,6 +13,8 @@ end
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
+gem 'guard-compat', group: [:development, :test]
+gem 'guard', group: [:development, :test]
 gem 'minitest-reporters', group: [:development, :test]
 gem 'mini_backtrace', group: [:development, :test]
 gem 'guard-minitest', group: [:development, :test]

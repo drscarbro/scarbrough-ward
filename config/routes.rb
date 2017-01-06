@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :messages
   get 'rsvp' => 'rsvp#index'
   get 'rsvp/new'
   post 'rsvps' => 'rsvp#create'

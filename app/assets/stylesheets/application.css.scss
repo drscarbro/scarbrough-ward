@@ -80,7 +80,7 @@ html{
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation:portrait){
+@media only screen and (min-device-width: 1024px) and (orientation:portrait){ 
     body{
         background-image: url('coffee-v.png');
         color: white;
@@ -92,7 +92,7 @@ html{
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation:landscape){
+@media only screen and (min-device-width: 1024px) and (orientation:landscape){
     body{
         color: white;
         background-image: url('coffee-h.png');
@@ -121,12 +121,24 @@ textarea{
 }
 
 .jumbotron{
-    color: white;
-    background: rgba(60, 60, 60, 0.6);
+    color: rgb(242, 242, 242);
+    background: rgba(37, 20, 13, 0.6);
+}
+
+.navbar{
+    background: rgba(37, 20, 13, 0.6);
+}
+
+.nav{
+
+}
+
+.field{
+    color: black;
 }
 
 .container{
-    color: white;
+    color: rgb(242, 242, 242);
 }
 
 .form-box{

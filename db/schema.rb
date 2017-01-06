@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161230203002) do
+ActiveRecord::Schema.define(version: 20170106033117) do
+
+  create_table "messages", force: :cascade do |t|
+    t.text     "content"
+    t.integer  "rsvp_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "rsvps", force: :cascade do |t|
     t.string   "firstname"
