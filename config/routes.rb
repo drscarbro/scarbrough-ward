@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   resources :messages
   get 'rsvp' => 'rsvp#index'
-  get 'rsvp/new'
+  get 'venue' => 'venue#index'
+  get 'registry' => 'registry#index'
+  get 'accomodations' => 'accomodations#index'
   post 'rsvps' => 'rsvp#create'
-
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

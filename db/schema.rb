@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170106033117) do
+ActiveRecord::Schema.define(version: 20170107204202) do
 
   create_table "messages", force: :cascade do |t|
     t.text     "content"
@@ -26,6 +26,11 @@ ActiveRecord::Schema.define(version: 20170106033117) do
     t.integer  "party_size"
     t.string   "email"
     t.string   "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "venues", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

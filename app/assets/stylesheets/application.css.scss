@@ -20,132 +20,106 @@ html{
     overflow-y: scroll;
 }
 
+@font-face{
+    font-family: 'wedding-font';
+    src:
+        font-url('wedding-font.otf') format('opentype');
+}
+
+body{
+    font-family: 'wedding-font';
+    color: white;
+}
+
 @media only screen and (max-device-width:480px){
     body{
-        background-image: url('coffee-v.png');
-        color: white;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('coffee-h.png');
         background-size: 100%;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding-top: 60px;
     }  
 }
 
 @media only screen and (min-device-width: 600px) and (orientation:landscape){
     body{
-        color: white;
-        background-image: url('coffee-h.png');
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('coffee-h.png');
         background-size: 100%;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding-top: 60px;
-    }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait){
-    body{
-        background-image: url('coffee-v.png');
-        color: white;
-        background-size: 100%;
-        background-color: rgb(72, 73, 91);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        padding-top: 60px;
     }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation:portrait){
     body{
-        background-image: url('coffee-v.png');
-        color: white;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('coffee-v.png');
         background-size: 100%;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding-top: 60px;
     }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation:landscape){
     body{
-        color: white;
-        background-image: url('coffee-h.png');
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('coffee-h.png');
         background-size: 100%;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait){
+    body{
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('coffee-v.png');
+        background-size: 100%;
+        background-color: rgb(72, 73, 91);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 
 @media only screen and (min-device-width: 1024px) and (orientation:portrait){ 
     body{
-        background-image: url('coffee-v.png');
-        color: white;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('coffee-v.png');
         background-size: 100%;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding-top: 60px;
     }
 }
 
 @media only screen and (min-device-width: 1024px) and (orientation:landscape){
     body{
-        color: white;
-        background-image: url('coffee-h.png');
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('coffee-h.png');
         background-size: 100%;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding-top: 60px;
     }
-}
-
-section{
-    overflow: auto;
-}
-
-textarea{
-    resize: vertical;
 }
 
 .center{
     text-align: center;
 }
 
-.center h1{
-    margin-bottom: 60px;
-}
-
 .jumbotron{
-    color: rgb(242, 242, 242);
-    background: rgba(37, 20, 13, 0.6);
+   background: rgba(0,0,0,0);
 }
 
-.navbar{
-    background: rgba(37, 20, 13, 0.6);
+#logo{
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 9px;
 }
 
-.nav{
-
-}
-
-.field{
-    color: black;
-}
-
-.container{
-    color: rgb(242, 242, 242);
-}
-
-.form-box{
-    padding: 10px;
-    color: white;
-}
-
-.btn{
-    width: 100%;
+#logo:hover{
+    background-color: inherit;
+    color: #fff;
+    text-decoration: none;
 }

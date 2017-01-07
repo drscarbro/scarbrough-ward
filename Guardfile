@@ -36,7 +36,8 @@ guard :minitest, spring: true do
   watch(%r{^test/test_helper\.rb$}) { 'test' }
 
   # Rails < 4
-  # watch(%r{^app/controllers/(.*)\.rb$}) { |m| "test/functional/#{m[1]}_test.rb" }
-  # watch(%r{^app/helpers/(.*)\.rb$})     { |m| "test/helpers/#{m[1]}_test.rb" }
-  # watch(%r{^app/models/(.*)\.rb$})      { |m| "test/unit/#{m[1]}_test.rb" }
+  watch(%r{^app/controllers/(.*)\.rb$}) { |m| "test/functional/#{m[1]}_test.rb" }
+  watch(%r{^app/helpers/(.*)\.rb$})     { |m| "test/helpers/#{m[1]}_test.rb" }
+  watch(%r{^app/models/(.*)\.rb$})      { |m| "test/unit/#{m[1]}_test.rb" }
+  watch(%r{^app/views/([^/]*?)/.*\.html\.erb$}) { |m| " test/controllers/#{m[1]}_controller_test.rb" }
 end
