@@ -29,6 +29,7 @@ html{
 body{
     font-family: 'wedding-font';
     color: white;
+    padding-top: 40px;
 }
 
 @media only screen and (max-device-width:480px){
@@ -54,7 +55,7 @@ body{
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation:portrait){
     body{
         background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('coffee-v.png');
-        background-size: 100%;
+        background-size: cover;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -94,7 +95,7 @@ body{
 @media only screen and (min-device-width: 1024px) and (orientation:landscape){
     body{
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('coffee-h.png');
-        background-size: 100%;
+        background-size: cover;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -128,4 +129,10 @@ footer{
     margin-top: 45px;
     padding-top: 5px;
     border-top: 1px solid #eaeaea;
+    width: 100%;
+    bottom: 0;
+}
+
+.modal{
+    color: #000;
 }
