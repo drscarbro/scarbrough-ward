@@ -1,0 +1,17 @@
+<h1>the Gibbs Ranch</h1>
+<div id="map" style="width:400px;height:400px"></div>
+
+<script>
+function myMap() {
+        var myCenter = new google.maps.LatLng(36.1812489,-94.4066436);
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {center: myCenter, zoom: 12};
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap(map);
+        mapTypeId: google.maps.MapTypeId.STREET
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa6LRYEecvpMWAP4cZLlWiQWKgxJ-HCt8&callback=myMap"></script>
+

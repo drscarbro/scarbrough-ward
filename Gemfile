@@ -12,6 +12,7 @@ end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
+gem 'bootstrap'
 gem 'autoprefixer-rails'
 gem 'guard-compat', group: [:development, :test]
 gem 'guard', group: [:development, :test]

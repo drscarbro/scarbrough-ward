@@ -2,9 +2,9 @@ class RsvpController < ApplicationController
   def index
     @rsvp_welcome = "Welcome to the Scarbrough-Ward RSVP Page"
     @all_rsvps = Rsvp.all
-  #end
+  # end
   
-  #def new
+  # def new
     @rsvp = Rsvp.new
   end
   
@@ -21,5 +21,4 @@ class RsvpController < ApplicationController
   def page_params
     params.require(:rsvp).permit(:firstname, :lastname, :party_size, :email, :address)
   end
-  
 end
