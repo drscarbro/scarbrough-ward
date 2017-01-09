@@ -145,3 +145,13 @@ body.modal-open-noscroll{
 .modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom{
     padding-right: 0!important;
 }
+
+.btn-inverse{
+    color: #9d9d9d;
+    background-color: #222;
+    border-color: #101010;
+}
+
+.btn-inverse:hover{
+    color: #fff;
+}
