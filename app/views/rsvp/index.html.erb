@@ -2,6 +2,10 @@
 <div class="modal fade" id="newRsvp">
     <div class="modal-dialog">
         <div class="modal-content">
+            <div class='modal-header modal-header-inverse'>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Please RSVP Below</h4>  
+            </div>
             <div class="modal-body">
                 <%= form_for(@rsvp) do |f| %>
                     <div class='form-box'>
@@ -26,8 +30,9 @@
                             <%= f.text_field :address, :class => 'form-control' %>
                         </div>
                     </div>
-                    <div>
-                        <%= f.submit :'Create', :class => 'btn btn-large' %>
+                    <div class="modal-footer">
+                        <%= f.submit :'Create', :class => 'btn btn-large btn-inverse float-left' %>
+                        <button type="button" class="btn btn-large btn-inverse float-right" data-dismiss="modal">Close</button>
                     </div>
                 <% end %>
             </div>
@@ -38,11 +43,3 @@
 <button class='btn btn-inverse btn-lg' data-toggle="modal" data-target="#newRsvp">
     RSVP
 </button>
-<!--<p><% @all_rsvps.each do |r| %>-->
-<!--<%= r.firstname %><br/>-->
-<!--<%= r.lastname %><br/>-->
-<!--<%= r.party_size %><br/>-->
-<!--<%= r.email %><br/>-->
-<!--<%= r.address %><br/>-->
-<!--<% end %>-->
-<!--</p>-->
