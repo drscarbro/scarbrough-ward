@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, scalable=no">
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-    </script>
-  <![endif]-->
-</head>
-<body style='height: 100%; margin: 0;'>
-  <div class='wrapper' style='display: flex; flex-flow: column; height: 100%'>
-    <%= render '/_partials/header' %>
-    <div class='content' style='flex: 1 1 auto'>
-      <%= yield %>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, scalable=no">
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body style='height: 100%; margin: 0;'>
+    <div class='wrapper' style='display: flex; flex-flow: column; height: 100%'>
+      <%= render '/_partials/header' %>
+      <div class='content' style='flex: 1 1 auto'>
+        <%= yield %>
+      </div>
+      <div class='push'></div>
+      <%= render '/_partials/footer' %>
     </div>
-    <%= render '/_partials/footer' %>
-  </div>
-</body>
+  </body>
 </html>

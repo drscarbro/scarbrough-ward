@@ -15,13 +15,12 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-* {
-    margin: 0;
-}
+// * {
+//     margin: 0;
+// }
 
 html{
     height: 100%;
-    // overflow-y: scroll;
 }
 
 @font-face{
@@ -59,7 +58,7 @@ body{
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation:portrait){
     body{
         background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('coffee-v.png');
-        background-size: cover;
+        background-size: 100%;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -99,7 +98,7 @@ body{
 @media only screen and (min-device-width: 1024px) and (orientation:landscape){
     body{
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('coffee-h.png');
-        background-size: cover;
+        background-size: 100%;
         background-color: rgb(72, 73, 91);
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -133,11 +132,10 @@ body{
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto -40px auto; /* the bottom margin is the negative value of the footer's height */
 }
 
 .footer, .push {
-    border-top: 1px solid #eaeaea;
     margin-top: 10px;
     padding-top: 4px;
     height: 45px; /* .push must be the same height as .footer */
@@ -169,4 +167,14 @@ body.modal-open-noscroll{
 .btn-inverse:focus{
     border-style: none;
     color: #fff;
+}
+
+table, th{
+    padding: 15px;
+    width: 80%;
+}
+
+td {
+   border: 1px solid;
+   padding: 15px;
 }

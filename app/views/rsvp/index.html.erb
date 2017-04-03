@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class='modal-header modal-header-inverse'>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Please RSVP Below</h4>  
+                <h4 class="modal-title">We look forward to seeing you at our wedding.</h4>  
             </div>
             <div class="modal-body">
                 <%= form_for(@rsvp) do |f| %>
@@ -31,15 +31,15 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <%= f.submit :'Create', :class => 'btn btn-large btn-inverse float-left' %>
-                        <button type="button" class="btn btn-large btn-inverse float-right" data-dismiss="modal">Close</button>
+                        <%= f.submit :'RSVP', :class => 'btn btn-large btn-inverse float-left' %>
+                        <button type="button" class="btn btn-large btn-inverse float-right" data-dismiss="modal">Cancel</button>
                     </div>
                 <% end %>
             </div>
         </div>
     </div>
 </div>
-<div class'center'>
+<div class='center'>
     <p><%= @rsvp_welcome %></p>
     <button class='btn btn-inverse btn-lg' data-toggle="modal" data-target="#newRsvp">
         RSVP

@@ -1,14 +1,18 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @message.content %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @message.rsvp_id %>
-</p>
-
-<%= link_to 'Edit', edit_message_path(@message) %> |
-<%= link_to 'Back', messages_path %>
+<div class='center'>
+  <div class='alert alert-success'>
+    <p id="notice"><strong><%= notice %></strong></p>
+  </div>
+  
+  <p>
+    <strong>Your Message:  </strong>
+    <%= @message.content %>
+  </p>
+  
+  <!--<p>-->
+  <!--  <strong>User:</strong>-->
+  <!--  <%= @message.rsvp_id %>-->
+  <!--</p>-->
+  
+  <%= link_to 'Edit Your Message', edit_message_path(@message), :class => 'btn btn-lg btn-inverse' %> |
+  <%= link_to 'Back To Messages', messages_path, :class => 'btn btn-lg btn-inverse' %>
+</div>
