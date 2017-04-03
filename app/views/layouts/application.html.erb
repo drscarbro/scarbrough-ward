@@ -11,14 +11,9 @@
       </script>
     <![endif]-->
   </head>
-  <body style='height: 100%; margin: 0;'>
-    <div class='wrapper' style='display: flex; flex-flow: column; height: 100%'>
-      <%= render '/_partials/header' %>
-      <div class='content' style='flex: 1 1 auto'>
-        <%= yield %>
-      </div>
-      <div class='push'></div>
-      <%= render '/_partials/footer' %>
-    </div>
+  <body style='margin: 0 0 45px;'>
+    <%= render '/_partials/header' %>
+    <%= yield %>
+    <%= render '/_partials/footer' %>
   </body>
 </html>

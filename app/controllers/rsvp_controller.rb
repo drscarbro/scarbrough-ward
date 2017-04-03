@@ -1,6 +1,6 @@
 class RsvpController < ApplicationController
   def index
-    @rsvp_welcome = "Welcome to the Scarbrough-Ward RSVP Page"
+    @rsvp_welcome = "Welcome to our RSVP Page. We look forward to seeing you at our Wedding."
     @all_rsvps = Rsvp.all
   # end
   
